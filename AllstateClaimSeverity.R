@@ -1,12 +1,12 @@
 
-
+# Allstate < 1240
 
 # Libraries ---------------------------------------------------------------
 
 library(tidyverse)
 library(tidymodels)
 library(vroom)
-
+setwd("~/GitHub/Allstate-Claims-2016-Competition")
 
 # Read Files --------------------------------------------------------------
 
@@ -19,14 +19,8 @@ Test <- vroom("test.csv")
 
 # Searching columns for Dep variable
 
-View(Train)
 colnames(Train)
 pull(Train,loss)
-
-for (i in 1:14){
-a <- paste0("cont",i)
-b <- NULL
-if(max(a)>b){b = max(a)}}
 
 b <- -Inf  # start with the smallest possible number
 
